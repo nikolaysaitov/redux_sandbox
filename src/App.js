@@ -8,11 +8,11 @@ function App() {
   console.log(cash);
 
   const addCash = (cash) => {
-    dispatch({ type: "add_cash", payload: cash });
+    dispatch({ type: "ADD_CASH", payload: cash });
   };
 
   const getCash = (cash) => {
-    dispatch({ type: "get_cash", payload: cash });
+    dispatch({ type: "GET_CASH", payload: cash });
   };
 
   return (
