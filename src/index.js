@@ -5,27 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import {createStore} from "redux";
 import { legacy_createStore as createStore} from 'redux'
+import { store } from './store/index.js';
 import { Provider } from 'react-redux';
 
-const defaultState = {
-  cash: 60,
-}
 
 
-const reducer = (state = defaultState, action ) => {
-  switch (action.type){
-    case "add_cash":
-      return {...state, cash: state.cash + action.payload};
 
-    case "get_cash":
-      return {...state, cash: state.cash - action.payload}
-
-    default:
-      return state;
-  }
-} 
-
-const store = createStore(reducer);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
