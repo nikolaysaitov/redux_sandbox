@@ -5,7 +5,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 const rootReduser = combineReducers({
     cash: cashReducer,
-    customer: customerReducer,
+    customers: customerReducer,
 
 })
 
